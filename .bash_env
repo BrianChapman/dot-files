@@ -1,0 +1,35 @@
+#!/bin/bash
+
+export JAVA_HOME=/home/brian/opt/jdk
+export FIGNORE=CVS:\~:.o:.svn 
+export GREP_OPTIONS="--exclude-dir=\.svn --exclude=*~"
+export MAVEN_OPTS="-Xmx1026m -XX:MaxPermSize=256m"
+export ANT_OPTS="-Xmx1026m -XX:MaxPermSize=256m"
+export M2_HOME="/home/brian/opt/maven"
+export JAVA_OPTS="-Xmx1026m -XX:MaxPermSize=256m -Dsun.io.serialization.extendedDebugInfo=true"
+export JBOSS_HOME=/home/brian/opt/jboss
+export MYSQL_PWD=
+export PATH="/home/brian/bin:$PATH"
+export PATH="$M2_HOME/bin:$PATH"
+export REBEL_HOME="/home/brian/opt/jrebel"
+
+#Android
+export ANDROID_HOME=/home/brian/opt/android-sdk-linux
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
+#Google Cloud
+export PATH=${PATH}:$HOME/opt/gsutil
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="$JAVA_HOME/bin:$PATH"
+
+#### Add appengine appcfg.sh tool #####
+export PATH="$APPENGINE_HOME/bin:$PATH"
+export APPENGINE_VERSION=1.9.7
+export APPENGINE_HOME=/home/brian/.m2/repository/com/google/appengine/appengine-java-sdk/$APPENGINE_VERSION/appengine-java-sdk/appengine-java-sdk-$APPENGINE_VERSION
+export PATH="/usr/local/mysql/bin:$PATH"
+
+
+#### PresenceLearning
+FLAVOR=brian
